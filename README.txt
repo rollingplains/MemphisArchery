@@ -69,9 +69,3 @@ Next recommended update
 - Replace vendor placeholders with real sponsor logos and website links
 - Swap the demo signup form action to Formspree or Google Forms
 - Add your full event schedule and waiver text if desired
-
-
-PHOTO SUBMISSIONS
-- GitHub Pages cannot receive uploaded photos directly.
-- Best option: create a Google Form with a file upload field or a shared Google Drive folder, then replace the placeholder upload button on gallery.html.
-- After reviewing uploads, copy approved images into assets/images/events/ and update gallery.html or index.html.
