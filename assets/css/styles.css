@@ -540,12 +540,12 @@ input:focus, select:focus, textarea:focus {
 
 .hero-home {
   background:
-    linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.68)),
-    url('../images/main-feature.jpg') center/cover no-repeat;
+    linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.45)),
+    url('../images/main-feature.jpg') center 38%/cover no-repeat;
 }
 .hero-home .hero-overlay {
-  background: radial-gradient(circle at top right, rgba(255,106,0,0.25), transparent 34%),
-              linear-gradient(90deg, rgba(17,17,17,0.25), transparent 55%);
+  background:
+    linear-gradient(180deg, rgba(17,17,17,0.18) 0%, rgba(17,17,17,0.02) 55%, rgba(17,17,17,0.10) 100%);
 }
 .feature-image-story { position: relative; min-height: 420px; }
 .feature-image-story img { height: 100%; min-height: 420px; }
@@ -565,19 +565,6 @@ input:focus, select:focus, textarea:focus {
 @media (max-width: 900px) { .submit-grid { grid-template-columns:1fr; } }
 
 
-.hero-target-badge {
-  width: min(280px, 72vw);
-  margin: 0 0 1.2rem;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.16);
-  box-shadow: 0 18px 36px rgba(0,0,0,0.22);
-}
-.hero-target-badge img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
 .homepage-flyer-wrap {
   width: 100%;
 }
@@ -605,7 +592,6 @@ input:focus, select:focus, textarea:focus {
   white-space: nowrap;
 }
 @media (max-width: 900px) {
-  .hero-target-badge { width: min(240px, 82vw); }
   .flyer-grid-home { grid-template-columns: 1fr; }
 }
 
@@ -649,4 +635,26 @@ input:focus, select:focus, textarea:focus {
 button[disabled] {
   opacity: 0.7;
   cursor: wait;
+}
+
+
+.hero-home .hero-content {
+  max-width: 760px;
+}
+.hero-home h1 {
+  color: #ffffff;
+  text-shadow: 0 3px 16px rgba(0,0,0,0.72);
+}
+.hero-home .hero-text,
+.hero-home .eyebrow {
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.62);
+}
+.hero-home .eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(17,17,17,0.38);
+  backdrop-filter: blur(4px);
 }
