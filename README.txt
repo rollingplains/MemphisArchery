@@ -1,12 +1,12 @@
-BowlifeMemphis Fix Pack v11
+BowlifeMemphis v11 Rollback Pack
 
-This overwrite pack updates:
+Purpose:
+- Restores the full original styles.css file that v11 overwrote
+- Use this to undo the site breakage caused by Fix Pack v11
+
+What to do:
+1. Extract this zip into your site folder and overwrite the existing file
+2. Push to GitHub
+
+This pack restores:
 - assets/css/styles.css
-
-Changes:
-- homepage banner is forced into a grayscale treatment
-- existing overlay/effect is removed
-- hero text remains readable
-- hero action buttons stay orange
-
-Overwrite the file in your site folder, then push to GitHub.
