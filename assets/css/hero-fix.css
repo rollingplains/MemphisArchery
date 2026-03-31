@@ -1,0 +1,12 @@
+
+.hero-home {
+  background: url('../images/hero.jpg') center center/cover no-repeat !important;
+}
+
+.hero-home::before {
+  display: none !important;
+}
+
+.hero-home .hero-overlay {
+  display: none !important;
+}

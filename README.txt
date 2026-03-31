@@ -1,9 +1,12 @@
-BowlifeMemphis Fix Pack v9
+FINAL HERO FIX
 
-Overwrite these files in your site folder, then push to GitHub.
+This forces the homepage banner to:
+- use the provided image
+- remove ALL overlays and effects
 
-Included fixes:
-- Homepage banner image uses the normal clear image with the overlay effect removed
-- The wording moved off the banner into the Featured Event section
-- Primitive tile on the homepage flyer replaced with Entry Fees
-- Decorative lines removed from the homepage flyer poster
+Steps:
+1. Copy hero.jpg into assets/images/
+2. Add hero-fix.css to your CSS folder
+3. Link hero-fix.css LAST in your index.html head section
+
+Then push to GitHub.
