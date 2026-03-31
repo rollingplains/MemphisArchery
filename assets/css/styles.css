@@ -642,12 +642,12 @@ button[disabled] {
   max-width: 760px;
 }
 .hero-home h1 {
-  color: #ffffff;
+  color: var(--accent);
   text-shadow: 0 3px 16px rgba(0,0,0,0.72);
 }
 .hero-home .hero-text,
 .hero-home .eyebrow {
-  color: #ffffff;
+  color: var(--accent);
   text-shadow: 0 2px 12px rgba(0,0,0,0.62);
 }
 .hero-home .eyebrow {

@@ -1,12 +1,9 @@
-Fix Pack v14
+BowlifeMemphis Fix Pack v15
 
-Includes:
-- Makes hero/banner text orange
-- You will manually remove the tagline sentence from index.html
+This overwrite pack updates only:
+- index.html
+- assets/css/styles.css
 
-Steps:
-1. Copy fix-v14.css into assets/css/
-2. Add to index.html (last stylesheet):
-   <link rel='stylesheet' href='assets/css/fix-v14.css'>
-3. Remove the sentence manually from index.html
-4. Push to GitHub
+Changes:
+- removes the sentence under the hero heading
+- changes the hero/banner lettering to orange
