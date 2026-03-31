@@ -539,13 +539,11 @@ input:focus, select:focus, textarea:focus {
 
 
 .hero-home {
-  background:
-    linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.45)),
-    url('../images/main-feature.jpg') center 38%/cover no-repeat;
+  background: url('../images/main-feature.jpg') center 38%/cover no-repeat;
 }
+
 .hero-home .hero-overlay {
-  background:
-    linear-gradient(180deg, rgba(17,17,17,0.18) 0%, rgba(17,17,17,0.02) 55%, rgba(17,17,17,0.10) 100%);
+  display: none;
 }
 .feature-image-story { position: relative; min-height: 420px; }
 .feature-image-story img { height: 100%; min-height: 420px; }
@@ -660,33 +658,33 @@ button[disabled] {
 }
 
 
-/* v8 targeted fixes: clear homepage hero, remove homepage flyer lines */
-.hero-home {
-  background: url('../images/main-feature.jpg') center 38%/cover no-repeat !important;
-}
-
-.hero-home .hero-overlay {
-  display: none !important;
+/* v9 targeted fixes */
+.hero-home .hero-content {
+  max-width: 860px;
 }
 
 .hero-home .eyebrow,
-.hero-home h1,
-.hero-home .hero-text {
-  color: #ffffff !important;
-  text-shadow: 0 3px 12px rgba(0,0,0,0.88) !important;
+.hero-home h1 {
+  color: #ffffff;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.82);
 }
 
-.hero-home .btn-secondary {
-  background: rgba(17,17,17,0.52);
-  border-color: rgba(255,255,255,0.24);
+.hero-home .hero-actions {
+  text-shadow: none;
 }
 
-/* remove decorative line treatment on homepage flyer poster only */
+.section-intro {
+  margin: 0 0 1.35rem;
+  max-width: 56rem;
+  color: rgba(255,255,255,0.88);
+  font-size: 1.05rem;
+}
+
 .flyer-scroll-home::before,
 .flyer-scroll-home::after {
-  display: none !important;
+  display: none;
 }
 
 .flyer-footer-bar-home {
-  border-top: none !important;
+  border-top: none;
 }
