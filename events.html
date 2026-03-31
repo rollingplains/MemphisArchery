@@ -130,29 +130,32 @@
         <div>
           <p class="eyebrow">Registration Form</p>
           <h2>Weekend Competition Signup</h2>
-          <p>This pack includes a working front-end form layout. For live submissions on GitHub Pages, update the form action to your Formspree endpoint or replace it with a Google Form embed.</p>
+          <p>This registration form is now connected to Formspree and will send completed entries to rollingplainsarchery@gmail.com.</p>
         </div>
-        <form class="signup-form" action="#" method="post">
+        <form class="signup-form" action="https://formspree.io/f/xykbwadr" method="POST" id="registration-form">
+          <input type="hidden" name="_subject" value="Rolling Plains Archery Registration Submission">
+          <input type="hidden" name="event_name" value="25th Traditional Archery Shoot - May 2-3, 2026">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
           <div class="form-grid">
             <label>
               Full Name
-              <input type="text" name="name" placeholder="Your full name">
+              <input type="text" name="name" placeholder="Your full name" required>
             </label>
             <label>
               Phone Number
-              <input type="tel" name="phone" placeholder="(806) 555-1234">
+              <input type="tel" name="phone" placeholder="(806) 555-1234" required>
             </label>
             <label>
               Email Address
-              <input type="email" name="email" placeholder="you@example.com">
+              <input type="email" name="email" placeholder="you@example.com" required>
             </label>
             <label>
               City / State
-              <input type="text" name="location" placeholder="Memphis, TX">
+              <input type="text" name="location" placeholder="Memphis, TX" required>
             </label>
             <label>
               Age Group
-              <select name="age_group">
+              <select name="age_group" required>
                 <option>Adult</option>
                 <option>Youth (11–15)</option>
                 <option>Cub / Mini Cub</option>
@@ -160,7 +163,7 @@
             </label>
             <label>
               Shooting Day
-              <select name="shoot_day">
+              <select name="shoot_day" required>
                 <option>Saturday</option>
                 <option>Sunday</option>
                 <option>Both Days</option>
@@ -168,22 +171,22 @@
             </label>
             <label>
               Class Selection
-              <input type="text" name="class_selection" placeholder="Traditional, Primitive, etc.">
+              <input type="text" name="class_selection" placeholder="Traditional, Primitive, etc." required>
             </label>
             <label>
               Primitive Championship
-              <select name="primitive">
+              <select name="primitive" required>
                 <option>No</option>
                 <option>Yes</option>
               </select>
             </label>
             <label>
               Emergency Contact
-              <input type="text" name="emergency_contact" placeholder="Name and number">
+              <input type="text" name="emergency_contact" placeholder="Name and number" required>
             </label>
             <label>
               Vendor Interest
-              <select name="vendor_interest">
+              <select name="vendor_interest" required>
                 <option>No</option>
                 <option>Yes</option>
               </select>
@@ -194,9 +197,10 @@
             <textarea name="notes" rows="5" placeholder="Anything else we should know?"></textarea>
           </label>
           <label class="checkbox-row">
-            <input type="checkbox" name="waiver">
+            <input type="checkbox" name="waiver" required>
             <span>I understand I will need to complete any required event waiver and follow event rules.</span>
           </label>
+          <div class="form-status" id="form-status" aria-live="polite"></div>
           <button class="btn btn-light" type="submit">Submit Registration</button>
         </form>
       </div>
@@ -216,8 +220,8 @@
         <p>Traditional archery event weekends in Memphis, Texas.</p>
       </div>
       <div>
-        <h4>Need a live form?</h4>
-        <p>Edit <code>events.html</code> and replace the form action with your preferred form endpoint.</p>
+        <h4>Registration is live</h4>
+        <p>Completed forms now submit through Formspree to <a href="mailto:rollingplainsarchery@gmail.com">rollingplainsarchery@gmail.com</a>.</p>
       </div>
       <div>
         <h4>Contact</h4>

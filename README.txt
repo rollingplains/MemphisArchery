@@ -75,3 +75,9 @@ PHOTO SUBMISSIONS
 - GitHub Pages cannot receive uploaded photos directly.
 - Best option: create a Google Form with a file upload field or a shared Google Drive folder, then replace the placeholder upload button on gallery.html.
 - After reviewing uploads, copy approved images into assets/images/events/ and update gallery.html or index.html.
+
+
+Form integration update:
+- The event registration form in events.html is live and posts to Formspree endpoint https://formspree.io/f/xykbwadr
+- Form submissions go to rollingplainsarchery@gmail.com
+- SMS alerts to (806) 204-0184 still require a separate automation such as Zapier + Twilio or another SMS service. That cannot be completed by static website files alone.
