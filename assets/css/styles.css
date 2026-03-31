@@ -539,11 +539,13 @@ input:focus, select:focus, textarea:focus {
 
 
 .hero-home {
-  background: url('../images/main-feature.jpg') center 38%/cover no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.45)),
+    url('../images/main-feature.jpg') center 38%/cover no-repeat;
 }
-
 .hero-home .hero-overlay {
-  display: none;
+  background:
+    linear-gradient(180deg, rgba(17,17,17,0.18) 0%, rgba(17,17,17,0.02) 55%, rgba(17,17,17,0.10) 100%);
 }
 .feature-image-story { position: relative; min-height: 420px; }
 .feature-image-story img { height: 100%; min-height: 420px; }
@@ -658,33 +660,54 @@ button[disabled] {
 }
 
 
-/* v9 targeted fixes */
+/* v10 homepage hero tightening + orange quick buttons */
+.hero-home {
+  min-height: 520px !important;
+  background: url('../images/main-feature.jpg') center 34% / cover no-repeat !important;
+}
+
+.hero-home::before,
+.hero-home::after,
+.hero-home .hero-overlay {
+  display: none !important;
+  content: none !important;
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
 .hero-home .hero-content {
-  max-width: 860px;
+  max-width: 920px !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .hero-home .eyebrow,
+.hero-home h1,
+.hero-home .hero-text,
+.hero-home p {
+  text-shadow: 0 3px 14px rgba(0,0,0,0.82) !important;
+}
+
+.hero-home .hero-actions .btn,
+.hero-home .hero-actions a.btn,
+.hero-home .hero-actions .btn-secondary,
+.hero-home .hero-actions .btn-outline {
+  background: #FF6A00 !important;
+  color: #ffffff !important;
+  border-color: #FF6A00 !important;
+  box-shadow: 0 10px 24px rgba(255,106,0,0.24) !important;
+}
+
+.hero-home .hero-actions .btn:hover,
+.hero-home .hero-actions a.btn:hover,
+.hero-home .hero-actions .btn-secondary:hover,
+.hero-home .hero-actions .btn-outline:hover {
+  background: #e45f00 !important;
+  border-color: #e45f00 !important;
+  color: #ffffff !important;
+}
+
+/* keep the hero text block from feeling too oversized against the tighter banner */
 .hero-home h1 {
-  color: #ffffff;
-  text-shadow: 0 3px 14px rgba(0,0,0,0.82);
-}
-
-.hero-home .hero-actions {
-  text-shadow: none;
-}
-
-.section-intro {
-  margin: 0 0 1.35rem;
-  max-width: 56rem;
-  color: rgba(255,255,255,0.88);
-  font-size: 1.05rem;
-}
-
-.flyer-scroll-home::before,
-.flyer-scroll-home::after {
-  display: none;
-}
-
-.flyer-footer-bar-home {
-  border-top: none;
+  max-width: 11ch !important;
 }

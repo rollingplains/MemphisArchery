@@ -1,14 +1,12 @@
-Bowlife Memphis Hero Aspect Fix
+Bowlife Memphis Fix Pack v10
 
-This pack includes:
-- a new wide banner image made from your uploaded photo
-- no overlay, no darkening, no filter look
-- CSS to force the site to use the new banner
+This overwrite pack updates only:
+- assets/images/main-feature.jpg
+- assets/css/styles.css
 
-To use:
-1. Copy hero-banner-clear.jpg into assets/images/
-2. Copy hero-banner-fix.css into assets/css/
-3. In index.html, add this line LAST in the <head>:
-   <link rel="stylesheet" href="assets/css/hero-banner-fix.css">
+Changes:
+- homepage hero image is rebuilt as a tighter, narrower banner from the uploaded deer photo
+- banner overlay/effect is removed
+- quick buttons beside Register are now orange too
 
-Then push to GitHub.
+Extract these files over your site folder, then push to GitHub.
