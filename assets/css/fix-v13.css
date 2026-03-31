@@ -1,0 +1,66 @@
+
+/* Bowlife Memphis Fix Pack v13
+   - Hero/banner in mono
+   - Quick hero buttons orange
+   - Remove flyer lines on homepage poster
+*/
+
+/* Banner: replace gradient background with a mono image only */
+.hero-home {
+  background: none !important;
+  overflow: hidden !important;
+}
+
+.hero-home::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url('../images/main-feature.jpg') center 38% / cover no-repeat !important;
+  filter: grayscale(100%) !important;
+  z-index: 0 !important;
+}
+
+.hero-home .hero-overlay,
+.hero-home::after {
+  display: none !important;
+  content: none !important;
+  background: transparent !important;
+}
+
+.hero-home .hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.hero-home h1,
+.hero-home .hero-text,
+.hero-home .eyebrow {
+  color: #ffffff !important;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.82) !important;
+}
+
+/* Hero quick buttons: all orange */
+.hero-home .btn-secondary,
+.hero-home .btn-secondary:visited,
+.hero-home .btn-secondary:hover,
+.hero-home .btn-primary:hover {
+  background: #FF6A00 !important;
+  border: 1px solid #FF6A00 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Remove homepage flyer lines */
+.flyer-scroll-home::before,
+.flyer-scroll-home::after,
+.flyer-scroll-home .flyer-divider,
+.homepage-flyer-wrap .flyer-divider {
+  display: none !important;
+  content: none !important;
+  border: 0 !important;
+  background: none !important;
+}
+
+.flyer-footer-bar-home {
+  border-top: none !important;
+}
