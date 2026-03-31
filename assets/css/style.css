@@ -1,0 +1,42 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero h2 {
+  color: #FF6A00;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  color: white;
+}
