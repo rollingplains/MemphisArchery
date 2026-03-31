@@ -1,12 +1,12 @@
-Bowlife Memphis Fix Pack v10
+BowlifeMemphis Fix Pack v11
 
-This overwrite pack updates only:
-- assets/images/main-feature.jpg
+This overwrite pack updates:
 - assets/css/styles.css
 
 Changes:
-- homepage hero image is rebuilt as a tighter, narrower banner from the uploaded deer photo
-- banner overlay/effect is removed
-- quick buttons beside Register are now orange too
+- homepage banner is forced into a grayscale treatment
+- existing overlay/effect is removed
+- hero text remains readable
+- hero action buttons stay orange
 
-Extract these files over your site folder, then push to GitHub.
+Overwrite the file in your site folder, then push to GitHub.
