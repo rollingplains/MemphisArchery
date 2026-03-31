@@ -1,0 +1,15 @@
+
+/* v14: Orange hero text + remove tagline */
+
+.hero-home h1,
+.hero-home h2,
+.hero-home .hero-text,
+.hero-home .eyebrow {
+  color: #FF6A00 !important;
+}
+
+/* Keep readability */
+.hero-home h1,
+.hero-home h2 {
+  text-shadow: 0 3px 12px rgba(0,0,0,0.8);
+}
