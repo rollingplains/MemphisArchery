@@ -539,13 +539,10 @@ input:focus, select:focus, textarea:focus {
 
 
 .hero-home {
-  background:
-    linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.45)),
-    url('../images/main-feature.jpg') center 38%/cover no-repeat;
+  background: url('../images/main-feature.jpg') center 38%/cover no-repeat;
 }
 .hero-home .hero-overlay {
-  background:
-    linear-gradient(180deg, rgba(17,17,17,0.18) 0%, rgba(17,17,17,0.02) 55%, rgba(17,17,17,0.10) 100%);
+  display: none;
 }
 .feature-image-story { position: relative; min-height: 420px; }
 .feature-image-story img { height: 100%; min-height: 420px; }
@@ -643,18 +640,18 @@ button[disabled] {
 }
 .hero-home h1 {
   color: #ffffff;
-  text-shadow: 0 3px 16px rgba(0,0,0,0.72);
+  text-shadow: 0 3px 12px rgba(0,0,0,0.85);
 }
 .hero-home .hero-text,
 .hero-home .eyebrow {
   color: #ffffff;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.62);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.82);
 }
 .hero-home .eyebrow {
   display: inline-block;
   margin-bottom: 0.75rem;
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(17,17,17,0.38);
-  backdrop-filter: blur(4px);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
 }
