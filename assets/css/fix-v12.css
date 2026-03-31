@@ -1,0 +1,47 @@
+
+/* v12: mono banner + orange buttons + remove flyer lines */
+
+/* MONO (grayscale) banner without breaking layout */
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../images/main-feature.jpg') center/cover no-repeat;
+  filter: grayscale(100%);
+  z-index: 0;
+}
+
+.hero-home {
+  position: relative;
+}
+
+.hero-home .hero-overlay,
+.hero-home::after {
+  display: none !important;
+}
+
+/* keep content above */
+.hero-home * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ORANGE BUTTONS */
+.hero-home .btn,
+.hero-home .btn-secondary,
+.hero-home .btn-outline,
+.hero-home a.btn {
+  background: #FF6A00 !important;
+  border-color: #FF6A00 !important;
+  color: #fff !important;
+}
+
+/* REMOVE FLYER LINES */
+.flyer-scroll-home::before,
+.flyer-scroll-home::after,
+.flyer-footer-bar-home,
+.flyer-scroll-home hr {
+  display: none !important;
+  border: none !important;
+  background: none !important;
+}

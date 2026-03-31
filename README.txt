@@ -1,12 +1,12 @@
-BowlifeMemphis v11 Rollback Pack
+Fix Pack v12
 
-Purpose:
-- Restores the full original styles.css file that v11 overwrote
-- Use this to undo the site breakage caused by Fix Pack v11
+Includes:
+- Mono (grayscale) banner image
+- Orange quick buttons
+- Removes flyer lines
 
-What to do:
-1. Extract this zip into your site folder and overwrite the existing file
-2. Push to GitHub
-
-This pack restores:
-- assets/css/styles.css
+Steps:
+1. Copy fix-v12.css into assets/css/
+2. Link it LAST in index.html head:
+   <link rel='stylesheet' href='assets/css/fix-v12.css'>
+3. Push to GitHub
