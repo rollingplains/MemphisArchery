@@ -1,0 +1,1 @@
+Updated site pack: hero now uses assets/images/hero.JPG with no grayscale/filter/overlay; hero quick buttons remain orange; homepage flyer lines are suppressed. Obsolete experimental CSS files were removed.
