@@ -756,3 +756,65 @@ button[disabled] {
 .flyer-footer-bar {
   border-top: none !important;
 }
+
+
+/* FINAL CLEAN HERO FIX - uses optimized lowercase hero.jpg only */
+.hero-home {
+  position: relative !important;
+  min-height: 560px !important;
+  background-image: url('../images/hero.jpg') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden !important;
+}
+.hero-home::before,
+.hero-home::after,
+.hero-home .hero-overlay {
+  display: none !important;
+  content: none !important;
+  background: transparent !important;
+  filter: none !important;
+  opacity: 0 !important;
+}
+.hero-home .hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.hero-home .eyebrow,
+.hero-home h1 {
+  color: var(--accent) !important;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.85) !important;
+}
+.hero-home .hero-actions .btn,
+.hero-home .hero-actions a.btn,
+.hero-home .btn-primary,
+.hero-home .btn-secondary {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+.hero-home .hero-actions .btn:hover,
+.hero-home .hero-actions a.btn:hover,
+.hero-home .btn-primary:hover,
+.hero-home .btn-secondary:hover {
+  background: #e45f00 !important;
+  border-color: #e45f00 !important;
+  color: #ffffff !important;
+}
+.homepage-flyer-wrap .flyer-scroll::before,
+.homepage-flyer-wrap .flyer-scroll::after,
+.homepage-flyer-wrap .flyer-divider,
+.flyer-scroll-home::before,
+.flyer-scroll-home::after,
+.flyer-divider {
+  display: none !important;
+  content: none !important;
+  border: 0 !important;
+  background: none !important;
+}
+.homepage-flyer-wrap .flyer-footer-bar,
+.flyer-footer-bar-home,
+.flyer-footer-bar {
+  border-top: none !important;
+}
